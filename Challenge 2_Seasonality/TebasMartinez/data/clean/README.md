@@ -11,5 +11,6 @@ All three datasets have the following columns:
 - text
 - clean_text
 - date
+- season
 
 These files haven't been pushed to GitHub since they are too large.
