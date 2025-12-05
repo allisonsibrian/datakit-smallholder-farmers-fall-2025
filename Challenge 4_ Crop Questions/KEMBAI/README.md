@@ -13,6 +13,7 @@ This analysis explores a large dataset of questions from smallholder farmers to 
 
 ### Data Sources
 - The primary dataset contains 21,541,705 rows of farmer questions and related metadata, loaded from `b0cd514b-b9cc-4972-a0c2-c91726e6d825.csv`.
+- All the output and extracted data from the current code will be [in this link](https://drive.google.com/drive/folders/1Jm2esR6ONe6x3UT_4heDsm6-18sXgXUl?usp=sharing)
 
 ### Approach
 1.  **Data Loading and Optimization**: The original CSV was loaded using PySpark in a Google Colab environment. To improve performance, the dataset was immediately converted to the more efficient Parquet format.
@@ -23,8 +24,8 @@ This analysis explores a large dataset of questions from smallholder farmers to 
     *   Removing punctuation and special characters.
     *   **Tokenization**: Splitting text into individual words.
     *   **Stop Word Removal**: Filtering out common, low-value words using a custom-defined list.
-5.  **Keyword Analysis**: A specific list of financial keywords (e.g., 'loan', 'price', 'income') was used to identify and tag relevant conversations within the English dataset.
-6.  **Visualization**: Generated a line chart using Plotly and Matplotlib showing the monthly trends of financial keyword mentions to understand the seasonality of these topics.
+5.  **Keyword Analysis**: A specific list of corps keywords (e.g., 'plant', 'maize', 'beans') was used to identify and tag relevant conversations within the English dataset.
+6.  **Visualization**: Generated a line chart using Plotly and Matplotlib showing the monthly trends of corps keyword mentions to understand the seasonality of these topics.
 
 ### Tools and Technologies
 -   **Programming Language**: Python
@@ -67,19 +68,19 @@ The most common topics discussed by farmers include maize, cattle, chicken, and 
 **Implications for Producers Direct:**
 -   Resources and support can be prioritized around these key topics to meet the most immediate needs of the farmers.
 
-### Finding 3: Seasonality of Financial Topics
-The analysis of financial keywords in the English dataset revealed trends in when farmers discuss financial matters. Visualizations show peaks and troughs in conversations about terms like "price," "loan," and "income" throughout the year.
+### Finding 3: Seasonality of Corps Topics
+The analysis of corps keywords in the English dataset revealed trends in when farmers discuss corps related topics. Visualizations show peaks and troughs in conversations about terms like "plant", "maize" and "beans" throughout the year.
 
 **Implications for Producers Direct:**
--   These dashboards can be used to time the launch of targeted financial literacy programs or advisory services to coincide with periods of high interest.
+-   These dashboards can be used to time the launch of targeted corps related topic.
 
 ## Visualizations
 
-### Financial Keyword Trends by Month
-![Financial Keyword Trends](path/to/your/visualization.png)
-*(Note: A line chart was generated using Plotly showing the count of financial keywords per month.)*
+### Corps Keyword Trends by Month
+![Corps Keyword Trends](corps_keyword_analysis.png)
+*(Note: A line chart was generated using Plotly showing the count of corps keywords per month for multi years.)*
 
-**Interpretation**: This visualization tracks the volume of financial-related questions throughout the year. For example, a peak in questions about "price" before a harvest season could inform when to provide market price information.
+**Interpretation**: This visualization tracks the volume of corps-related questions throughout the year.
 
 ## Limitations and Challenges
 
@@ -88,7 +89,7 @@ The analysis of financial keywords in the English dataset revealed trends in whe
 -   A small percentage of data (2.2%) had a NULL language field.
 
 ### Methodological Limitations
--   The keyword extraction was based on a predefined list of English words, which may not capture the full context or nuances of questions in other languages.
+-   The keyword extraction was based on a list of English words extracted from the English data, which may not capture the full context or nuances of questions in other languages.
 -   No forecasting or predictive modeling was performed.
 
 ### Technical Challenges
@@ -112,9 +113,7 @@ The analysis of financial keywords in the English dataset revealed trends in whe
 ```
 KEMBAI/
 ├── README.md (this file)
-└── Codes/
-    ├── KEMBAI_DATAKIND.ipynb
-    └── words_classification_Finanical_Data_kind_process_the_data.ipynb
+├── KEMBAI_DATAKIND.ipynb
 ```
 
 ## How to Run This Analysis
@@ -129,7 +128,7 @@ KEMBAI/
   - `seaborn`
 
 ### Running the Analysis
-The analysis is contained within the two Jupyter Notebooks in the `Codes/` directory. They are designed to be run in a Google Colab environment.
+The analysis is contained within the Jupyter Notebooks in the directory. They are designed to be run in a Google Colab environment.
 1.  Upload the dataset to your Google Drive.
 2.  Open the notebooks in Google Colab.
 3.  Update the file paths in the notebooks to point to the location of your data in Google Drive.
@@ -137,9 +136,9 @@ The analysis is contained within the two Jupyter Notebooks in the `Codes/` direc
 
 ## Contact and Collaboration
 
-**Author**: KEMBAI
-**GitHub**: [Your GitHub Handle]
-**Slack**: [Your Slack Handle]
+**Author**: Amr Abd-Alkrim, Bashir Alsuty, and Emad Abubakar
+**GitHub**: @3mrdev, @bashiralsuty, @EMAD77
+**Slack**: Amr Abd-Alkrim, Bashir Alsuty, emad
 
 ---
 

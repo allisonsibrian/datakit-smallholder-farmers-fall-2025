@@ -13,6 +13,7 @@ This analysis explores a large dataset of questions from smallholder farmers to 
 
 ### Data Sources
 - The primary dataset contains 21,541,705 rows of farmer questions and related metadata, loaded from `b0cd514b-b9cc-4972-a0c2-c91726e6d825.csv`.
+- All the output and extracted data from the current code will be [in this link](https://drive.google.com/drive/folders/1Jm2esR6ONe6x3UT_4heDsm6-18sXgXUl?usp=sharing)
 
 ### Approach
 1.  **Data Loading and Optimization**: The original CSV was loaded using PySpark in a Google Colab environment. To improve performance, the dataset was immediately converted to the more efficient Parquet format.

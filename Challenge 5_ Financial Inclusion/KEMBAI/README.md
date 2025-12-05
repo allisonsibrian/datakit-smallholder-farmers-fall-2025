@@ -13,6 +13,7 @@ This analysis explores a large dataset of questions from smallholder farmers to 
 
 ### Data Sources
 - The primary dataset contains 21,541,705 rows of farmer questions and related metadata, loaded from `b0cd514b-b9cc-4972-a0c2-c91726e6d825.csv`.
+- All the output and extracted data from the current code will be [in this link](https://drive.google.com/drive/folders/1Jm2esR6ONe6x3UT_4heDsm6-18sXgXUl?usp=sharing)
 
 ### Approach
 1.  **Data Loading and Optimization**: The original CSV was loaded using PySpark in a Google Colab environment. To improve performance, the dataset was immediately converted to the more efficient Parquet format.
@@ -76,7 +77,7 @@ The analysis of financial keywords in the English dataset revealed trends in whe
 ## Visualizations
 
 ### Financial Keyword Trends by Month
-![Financial Keyword Trends](path/to/your/visualization.png)
+![Financial Analysis Keywords and Trends](financial_analysis.png)
 *(Note: A line chart was generated using Plotly showing the count of financial keywords per month.)*
 
 **Interpretation**: This visualization tracks the volume of financial-related questions throughout the year. For example, a peak in questions about "price" before a harvest season could inform when to provide market price information.
@@ -112,9 +113,7 @@ The analysis of financial keywords in the English dataset revealed trends in whe
 ```
 KEMBAI/
 ├── README.md (this file)
-└── Codes/
-    ├── KEMBAI_DATAKIND.ipynb
-    └── words_classification_Finanical_Data_kind_process_the_data.ipynb
+├── KEMBAI_DATAKIND.ipynb
 ```
 
 ## How to Run This Analysis
@@ -137,9 +136,9 @@ The analysis is contained within the two Jupyter Notebooks in the `Codes/` direc
 
 ## Contact and Collaboration
 
-**Author**: KEMBAI
-**GitHub**: [Your GitHub Handle]
-**Slack**: [Your Slack Handle]
+**Author**: Amr Abd-Alkrim, Bashir Alsuty, and Emad Abubakar
+**GitHub**: @3mrdev, @bashiralsuty, @EMAD77
+**Slack**: Amr Abd-Alkrim, Bashir Alsuty, emad
 
 ---
 
