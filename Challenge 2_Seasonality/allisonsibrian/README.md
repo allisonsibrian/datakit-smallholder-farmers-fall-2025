@@ -85,9 +85,9 @@ Similar to Kenya, 'maize' and 'chicken' are the top 2 frequent words but 'seed' 
 ## Visualizations
 
 ### Rainfall vs. Question Volume
-![Visualization 1](http://localhost:8888/lab/tree/Challenge%202_Seasonality/allisonsibrian/Kenya_qprcp.png)
-![Visualization 2](http://localhost:8888/lab/tree/Challenge%202_Seasonality/allisonsibrian/Uganda_qprcp.png)
-![Visualization 3](http://localhost:8888/lab/tree/Challenge%202_Seasonality/allisonsibrian/Tanzania_qprcp.png)
+![Visualization 1](Challenge 2_Seasonality/allisonsibrian/Kenya_qprcp.png)
+![Visualization 2](Challenge 2_Seasonality/allisonsibrian/Uganda_qprcp.png)
+![Visualization 3](Challenge 2_Seasonality/allisonsibrian/Tanzania_qprcp.png)
 
 **Interpretation**: 
 This visualization shows the ERA5 overlay on farmer question volume.
@@ -95,7 +95,7 @@ This visualization shows the ERA5 overlay on farmer question volume.
 - Question Volume tends to peak during the second half of the year (Kenya/Uganda), while it peaks during the Masika Rains for Tanzania.
 
 ### Regional Heatmap
-![Visualization 4](http://localhost:8888/lab/tree/Challenge%202_Seasonality/allisonsibrian/word_frequencies_countries.png)
+![Visualization 4](Challenge 2_Seasonality/allisonsibrian/word_frequencies_countries.png)
 
 **Interpretation**: 
 This heatmap displays the Top 10 word frequencies per region, identifying distinct seasonal keywords.
