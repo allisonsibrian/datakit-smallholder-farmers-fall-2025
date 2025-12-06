@@ -65,8 +65,3 @@ missingno
 **License**:  
 - Add your preferred license file (e.g., `MIT` or `Apache-2.0`) as appropriate.
 
----
-
-If you want, I can:
-- Insert a ready-to-commit `README.md` file into your repo (and run a git commit command snippet for you to copy).  
-- Add the TF-IDF + heatmap cells into Exploration.ipynb so you can run them directly. Which would you prefer next?
