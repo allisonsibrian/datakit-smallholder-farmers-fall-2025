@@ -1,28 +1,29 @@
-# [Beatrice Liu] - [Challenge 4 - Crop Questions] Analysis
+# [Beatrice Liu] - [Challenge 4 - Crop Questions] Analysis -- ** incomplete **
 
 ## Overview
-Created bi-, tri-, and quad-grams for English questions on:  cattle, tomato, maize, chickens, and no topic to discern most common questions; these can be used by Producers Direct to create FAQ for smallholder farmers.
+Created bi-, tri-, and quad-grams and interactive visualizations for English questions by Kenyan farmers on:  cattle, tomato, maize, chickens, and no topic to discern most common questions; these can be used by Producers Direct to create FAQ for smallholder farmers.  Sadly, I can't figure out how to imbed the interactive graphs here, but they are saved in the network_graphs folder.
 
 ## Research Questions
-- Question 1: What specific question are you trying to answer?
-- Question 2: What patterns are you looking for?
-- Question 3: What insights do you hope to provide?
+- Question 1: What are the most common subjects farmers are asking about?  
+- 
 
 ## Methodology
 
 ### Data Sources
-- List the datasets you're using
-- Note any external data sources (weather, agricultural calendars, etc.)
-- Document any data preprocessing steps
+- Producers Direct Dataset
+- Swahili stopword and verb lemmatization files  
 
-### Approach /  Notebooks: Overview describes steps in greater detail
+### Approach /  Notebook overviews describe steps in greater detail - see 'Q4.Ngrams.Jupyter.Notebooks.pdf' for list of notebooks and running order
 1. **Step 1**: Data loading and initial exploration
 2. **Step 2**: Data cleaning and preprocessing
-3. **Step 3**: Analysis techniques applied
+3. **Step 3**: Data segmentation into smallers datasets for analysis: unique questions asked by farmers in 4 countries
 4. **Step 4**: Visualization and interpretation
-5. **Step 5**: Validation and testing
-1.
-6. 
+ 
+
+### Output Files and Visualizations
+- Cleaned data files and interactive visualizations can be found in [google drive folder](https://drive.google.com/drive/folders/1tpwqTqoFfZCWvDvncJjaSbzzua0Y6Q_i?usp=sharing)
+- Note:  visualizations are uploaded to github in 'network_graphs' folder  
+
 
 ### Tools and Technologies
 - **Programming Language**: Python 3.13.5 
@@ -30,7 +31,6 @@ Created bi-, tri-, and quad-grams for English questions on:  cattle, tomato, mai
 - **GenAI Tools Used**: ChatGPT, Anaconda Toolbox
 - **Other Tools**: Jupyter Notebook
 
-## Use of Generative AI
 
 ### Tools Used
 - **ChatGPT**: Used for generating code for natural language processing functions in English, translating Swahili tokens into English
@@ -48,10 +48,10 @@ Created bi-, tri-, and quad-grams for English questions on:  cattle, tomato, mai
 Filtered Description of the finding, supported by data and visualizations.
 
 **Implications for Producers Direct:**
-- How this finding can be used
+- Need proper NLP to fully understand the question, e.g. argriculture corpus in Swahili, proper lemmatization,  How this finding can be used
 - What actions it suggests
 
-### Finding 2: [Title]
+### Finding 2: [Most common questions]
 Description of the finding, supported by data and visualizations.
 
 **Implications for Producers Direct:**
@@ -91,20 +91,10 @@ Description of the finding, supported by data and visualizations.
 
 ### Technical Challenges
 - Computational constraints
-- Translation accuracy issues
-- Other technical hurdles
+- Translation accuracy issues - YES
+- Other technical hurdles - data dictionary was vague
 
-## Next Steps and Recommendations
 
-### For Further Analysis
-1. **Recommendation 1**: What could be explored next
-2. **Recommendation 2**: How to deepen this analysis
-3. **Recommendation 3**: Related questions to investigate
-
-### For Producers Direct
-1. **Action 1**: Specific recommendation for the organization
-2. **Action 2**: How to use these insights
-3. **Action 3**: What additional data or resources would help
 
 ## Files in This Contribution
 
