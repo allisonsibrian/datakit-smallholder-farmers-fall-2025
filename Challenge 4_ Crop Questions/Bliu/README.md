@@ -94,25 +94,25 @@ Bliu_analysis/
 ├── README.md (this file)
 ├── notebooks/
 │   ├── question_preprocess.ipynb
-│   ├── kenya_q_eng.ipynb
 │   └── kenya_q_swa.ipynb
-│   └── nlp_swa.ipynb
-│   └── translate.ipynb
-│   └── nlp_eng.ipynb
-│   └── nlp_eng_q_notopic.ipynb
-│   └── nlp_eng_cattle.ipynb
-│   └── nlp_eng_chicken.ipynb
-│   └── nlp_eng_maize.ipynb
-│   └── nlp_eng_tomato.ipynb
-├── 10 interactive visualizations/
-│   ├── *xx*bigram_eng_ken_*topic*_network.html
+│       └──nlp_swa.ipynb
+│       └──translate.ipynb
+│   ├── kenya_q_eng.ipynb
+│       └──nlp_eng.ipynb
+│       └──nlp_eng_q_notopic.ipynb
+│       └──nlp_eng_cattle.ipynb
+│       └──nlp_eng_chicken.ipynb
+│       └──nlp_eng_maize.ipynb
+│       └──nlp_eng_tomato.ipynb
+├── 10 directed interactive network visualizations/
+│   ├── {xx}bigram_eng_ken_{topic}_network.html
 │── static directed network visualizations/
 │   └── top40trigrams_ken_eng_network.png
 │   └── top40bigrams_ken_eng_network.png
 │   └── top40bigrams_ken_eng_Notopic_network.png
 │   └── top30trigrams_ken_eng_network.png
-├── results - *sorry, no markdown file*/
-│   ├── farmers.bliu.pdf
+├── results - displayed in notebooks /
+│   ├── farmers.bliu.pdf - sorry, no markdown file
 └── translated n-grams from swahili to english data/ 
     └── ken_240quadgrams_swa2eng.txt
     └── ken_500bigrams_swa2eng.txt
