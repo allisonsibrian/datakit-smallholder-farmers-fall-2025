@@ -67,7 +67,8 @@ See *'farmers.bliu.pdf'* for summary of findings
 
 
 ## Visualizations: *see file list below* 
-![Tri-Grams Network Graph] (Challenge 4_ Crop Questions/Bliu/top30trigrams_ken_eng_Notopic_network.png)
+![Tri-Grams Network Graph] (Challenge 4_ Crop Questions/Bliu/network_graphs/top30trigrams_ken_eng_Notopic_network.png)
+
 
 ## Limitations and Challenges
 
@@ -120,7 +121,7 @@ Bliu_analysis/
 
 
 ### Open and run notebooks in order: refer to 'Q4.Ngrams.Jupyter.Notebooks.pdf' 
-![Order of Jupyter Notebooks](Challenge 4_ Crop Questions/Bliu/Q4.Ngrams.Jupyter.Notebooks.pdf)
+![Order of Jupyter Notebooks]()
 
 ```
 
