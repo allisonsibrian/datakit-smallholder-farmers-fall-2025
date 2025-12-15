@@ -1,51 +1,65 @@
-# datakit-smallholder-farmers-fall-2025
+# Climate-Driven Agricultural Insights: NLP & Predictive Modeling for East Africa
 
-## What's a DataKit?
-_A DataKit™ is a work-ready set of data, software, and innovation questions, curated by DataKind, in a domain of social good. As you engage with a DataKit, you will apply your skills for social impact while deepening your understanding of problems common in the space. All learnings, ideas, and insights resulting from this DataKit will be aggregated and used by DataKind to expand our impact in the financial inclusion and economic opportunity sector. Specifically, we aim to leverage your insights and prototype solutions to expand on our product offerings, supporting stakeholders to expand their reach and impact. Learnings will be shared throughout the DataKit and beyond._ 
+![Python](https://img.shields.io/badge/Python-3.11-blue) ![Data](https://img.shields.io/badge/Data-ERA5%20%7C%20SMS-green) ![Partner](https://img.shields.io/badge/Partner-DataKind%20%7C%20Producers%20Direct-orange)
 
-# Problem to tackle
-Producers Direct acquired all data, technologies, and data science initiatives from WeFarm when the latter went bankrupt in late 2022. WeFarm operated for approximately 7 years as an SMS platform, enabling smallholder farmers in East Africa to share agricultural knowledge and receive peer-to-peer advice. During this time, WeFarm accumulated a substantial dataset consisting of:
-- 7.6M+ questions asked across four languages (English, Swahili, Luganda, and Nyn)
-- 17.2M+ responses to these questions
-- Nearly 200,000 farming tips shared on the platform
-- Quality ratings for approximately 20% of the responses
-- Basic demographic and farming information on platform users
+## 📌 Project Overview
+**Hosted by:** DataKind & Producers Direct  
+**Role:** Volunteer Data Scientist / Researcher
 
-This rich dataset could yield valuable insights to support on-farm management of smallholder farmers and help improve farm productivity and increase household incomes. 
+This project analyzes **21 million SMS messages** from smallholder farmers in East Africa (Kenya, Uganda, and Tanzania). 
+By integrating **ERA5 Satellite Climate Reanalysis data** with a multilingual Natural Language Processing (NLP) pipeline, I investigated how climate patterns and seasonality drive farmer inquiries.
 
-However, Producers Direct needs analytical expertise to extract meaningful patterns and actionable information from this data. The organization is interested in exploring several key areas as noted below.
+---
 
-# Submitting your work 
-Every bit of information you contribute is a chance for our partner, Producers Direct, to better understand the challenges and opportunities smallhold farmers face in sub-Saharan Africa and Latin America through a data-driven lens.  
+## 📂 Project Context: What is a DataKit?
+This research was conducted as part of a **DataKind DataKit**.
 
-***We want to see it all! Everything will help–not just right answers, but wrong answers and works in progress too.***
+> _"A DataKit™ is a work-ready set of data, software, and innovation questions, curated by DataKind... All learnings, ideas, and insights resulting from this DataKit will be aggregated and used to expand impact in the financial inclusion and economic opportunity sector."_
 
-## Use of Generative AI during the Event
+**The Dataset Source (WeFarm / Producers Direct):**
+Producers Direct acquired this dataset from WeFarm, a peer-to-peer SMS platform. The archive represents 7 years of agricultural activity, including:
 
-Generative AI tools (such as ChatGPT, GitHub Copilot, or similar) may be used throughout the DataKit event to assist with tasks such as code generation, data visualization, or documentation. We encourage participants to use these tools strategically and responsibly as partners in exploration and analysis, not as replacements for critical thinking.. The goal is to use GenAI strategically to enhance creativity, collaboration, and efficiency, while ensuring that all final analyses and insights reflect human judgment, transparency and ethical data practices. 
+*   **7.6 Million+** farmer questions across 4 languages (English, Swahili, Luganda, Runyankole).
+*   **17.2 Million+** responses and 200,000+ farming tips.
+*   **Demographic Data** covering key agricultural regions in East Africa.
 
-## GitHub Guidelines
-To contribute to a challenge, please add your work to the appropriate challenge sub-folder in the GitHub repository.
-1. Fork this repository to your own GitHub account.
-2. Add your files locally under `challenge_X_title/<your-name-or-analysis-title>/`
-3. Include your analysis, code, and results.
-4. Commit and push your changes to your fork.
-5. Open a Pull Request back to this repository.
-Be sure to include a short `README.md` in your submission folder describing your approach, key results, and any dependencies.
+**The Challenge:**
+Producers Direct needed to extract actionable patterns from this unstructured text. My research focused on determining if external climate factors (Rainfall/Temperature) could be used to forecast spikes in specific topics like "Pest & Disease."
 
-# The Project Brief 
-The project brief to guide you for this DataKit event can be found [here](https://docs.google.com/document/d/1jKTmb8R5GlM9uqQkB5fXd37o2bdX17JKB36mK-NqWFE/edit?tab=t.0). 
+---
 
-***N.B.*** Please do not upload the challenge dataset to public dataset repositories such as Kaggle or share the data via public Google Drive or Dropbox links. 
+## 🚀 Key Research Outcomes
 
-_While we recognize this may facilitate collaboration with other volunteers, our partners at Producers Direct are looking to develop the legal, governance, and technical infrastructure for their global cooperative. This will focus on allowing farmers to retain control of their data, but allow third parties access to the data in specific circumstances._
+### [Challenge 1: Predictive Modeling](Challenge%201%20_Weather%20Patterns/allisonsibrian/README.md)
+*   **The Model:** Random Forest Regressor using ERA5 weather features.
+*   **The Finding:** While **Seasonality (Month)** is the primary driver of question volume, **1-Month Lagged Rainfall** emerged as one of the top *environmental* predictors ($R^2=0.18$ for 'Pests & Disease' Question Topics).
+*   **Future Application:** With further refinement (weekly aggregation), this 4-week lag signal could trigger automated SMS alerts to warn farmers of impending pest incubation periods.
+*   **[👉 Read the Full Analysis](Challenge%201%20_Weather%20Patterns/allisonsibrian/README.md)**
 
 
-# How to contribute: Challenges
-- [Prep Challenge: Bridging Languages — Translating Farmer Conversations](<https://github.com/datakind/datakit-smallholder-farmers-fall-2025/tree/main/Prep%20Challenge-%20Translation>)
-- [Challenge 1: Identifying patterns in weather and agriculture](<https://github.com/datakind/datakit-smallholder-farmers-fall-2025/tree/main/Challenge%201%20_Weather%20Patterns>)
-- [Challenge 2: Seasonality](<https://github.com/datakind/datakit-smallholder-farmers-fall-2025/tree/main/Challenge%202_Seasonality>)
-- [Challenge 3: Identifying Community Leaders](<https://github.com/datakind/datakit-smallholder-farmers-fall-2025/tree/main/Challenge%203_Community%20Leaders>). 
-- [Challenge 4: Crop-Specific vs. Crop-Independent Questions](<https://github.com/datakind/datakit-smallholder-farmers-fall-2025/tree/main/Challenge%204_%20Crop%20Questions>)
-- [Challenge 5: Beyond Farming — Financial Inclusion and Livelihood](<https://github.com/datakind/datakit-smallholder-farmers-fall-2025/tree/main/Challenge%205_%20Financial%20Inclusion>)
+### [Challenge 2: Seasonality & NLP](Challenge%202_Seasonality/allisonsibrian/README.md)
+*   **The Finding:** Farmer engagement does *not* peak during the primary planting season ("Long Rains"). Instead, it spikes during the **Short Rains/Post-Harvest** window (Aug–Nov).
+*   **The Baseline:** This insight offers a data-driven hypothesis for resource allocation.
+*   **Future Application:** With further refinement, incorporating the **full dataset** (beyond stratified sampling) and including **stronger translation models** (validated by native-speakers), these insights could guide services to target farmers' needs during the post-harvest handling and second-season preparation season.
+*   **[👉 Read the Full Analysis](Challenge%202_Seasonality/allisonsibrian/README.md)**
 
+---
+
+## 📊 Visual Highlight
+| **Predictive Logic (Challenge 1)** | **Regional Insights (Challenge 2)** |
+| :---: | :---: |
+| ![Feature Importance](Challenge%201%20_Weather%20Patterns/allisonsibrian/feature_importances.png) | ![Regional Heatmap](Challenge%202_Seasonality/allisonsibrian/word_frequencies_countries.png) |
+| **Figure 1:** Feature Importance showing **1-Month Lagged Rainfall** as one of top predictors. | **Figure 2:** Regional heatmap revealing distinct crop priorities (e.g., **Tomato** in Uganda vs. **Maize** in Kenya). |
+
+---
+
+## 🛠 Tech Stack
+*   **Data Processing:** `pandas`, `duckdb` (Handling 7.6M+ rows).
+*   **Machine Learning:** `scikit-learn` (Random Forest, TimeSeriesSplit).
+*   **NLP:** `nltk`, `Google Gemini` (Batch translation for local languages).
+*   **ERA5 Reanalysis Data**
+
+---
+## 📬 Contact
+**Allison Sibrian**
+**Email**: @allisonnsibrian@gmail.com
